@@ -1,30 +1,62 @@
+# =========================
 # Python
+# =========================
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 *.so
 
-# Virtual environment
+# =========================
+# Virtual Environment
+# =========================
 .venv/
 venv/
 env/
 
-# Environment variables
+# =========================
+# Environment / Secrets
+# =========================
 .env
+.env.*
+!.env.example
 
+# =========================
 # Database
+# =========================
 *.db
 *.sqlite
 *.sqlite3
 
-# Test / coverage
+# =========================
+# Testing / Coverage
+# =========================
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
+.nox/
 
+# =========================
+# Type Checking
+# =========================
+.mypy_cache/
+.pyright/
+
+# =========================
+# FastAPI / Temporary
+# =========================
+*.log
+*.tmp
+
+# =========================
 # IDE
+# =========================
 .vscode/
 .idea/
 
+# =========================
 # OS
+# =========================
 .DS_Store
 Thumbs.db
